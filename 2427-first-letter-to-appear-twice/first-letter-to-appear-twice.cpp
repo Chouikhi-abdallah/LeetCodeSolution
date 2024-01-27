@@ -3,7 +3,7 @@ public:
     char repeatedCharacter(string s) {
         map<char,int> mp;
         char ch;
-        for (const char &i:s){
+        for (char &i:s){
             mp[i]++;
             if(mp[i]==2){
                  ch=i;
