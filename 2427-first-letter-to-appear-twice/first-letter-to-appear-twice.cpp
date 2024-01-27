@@ -1,6 +1,6 @@
 class Solution {
 public:
-    char repeatedCharacter(string s) {
+    char repeatedCharacter(string &s) {
         map<char,int> mp;
         char ch;
         for (char &i:s){
