@@ -7,7 +7,7 @@ public:
     std::sort(nums.begin(), nums.end());
 
 
-        for (int num: nums) {
+        for (int &num: nums) {
             vi.push_back(num);
             kk++;
             if (kk == 3) {
