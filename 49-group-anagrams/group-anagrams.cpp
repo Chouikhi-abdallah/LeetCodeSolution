@@ -2,8 +2,8 @@ class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
         vector<vector<string>>vvs;
-    map<string,vector<int>> mpsv;
-    vector<string> strs2=strs;
+        map<string,vector<int>> mpsv;
+        vector<string> strs2=strs;
     if(strs.size()==1){
         vvs.push_back({strs[0]});
         return vvs;
