@@ -4,7 +4,7 @@ public:
         
     string cleanStr;
 
-    for (char i : s) {
+    for (char &i : s) {
         if (isalnum(i)) {
             cleanStr += char(tolower(i));
         }
