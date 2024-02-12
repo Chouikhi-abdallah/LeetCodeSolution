@@ -3,13 +3,14 @@ public:
     int majorityElement(vector<int>& nums) {
         int n=int (nums.size());
         map<int,int> mp;
-        int x;
-        for(auto &i:nums){
+        int majorityNumber=0;
+        for(const auto &i:nums){
             mp[i]++;
             if (mp[i]>n/2){
-                x= i;
-                break;}    
+                majorityNumber= i;
+                break;
+                }    
         }
-        return x;
+        return majorityNumber;
     }
 };
