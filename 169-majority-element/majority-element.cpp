@@ -6,8 +6,9 @@ public:
         int x;
         for(auto &i:nums){
             mp[i]++;
-            if (mp[i]>n/2)
-                x= i;    
+            if (mp[i]>n/2){
+                x= i;
+                break;}    
         }
         return x;
     }
