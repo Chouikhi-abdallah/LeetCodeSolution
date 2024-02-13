@@ -15,7 +15,7 @@ public:
 
 }
     string firstPalindrome(vector<string>& words) {
-        for (string &i: words) {
+        for (string  &i: words) {
         if (isPalidrome(i)) {
                 return i;
         }
