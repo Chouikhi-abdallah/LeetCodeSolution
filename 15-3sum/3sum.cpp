@@ -13,6 +13,7 @@ public:
             if(nums[leftPointer]+nums[right]+nums[left]==0){
                 svi.insert({nums[leftPointer],nums[right],nums[left]});
                 left++;
+                right--;
             }
             else if(nums[leftPointer]+nums[right]+nums[left]<0){
                 left++;
