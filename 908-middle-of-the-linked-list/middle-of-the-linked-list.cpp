@@ -17,20 +17,15 @@ public:
         totalNode++;
         pointer = pointer->next;
     }
-    if (totalNode % 2 == 0){
+    
         int t=(totalNode/2);
         while(t--){
-            head=head->next;
-        }
-    }
+            head=head->next;}
         
-    else{
-        int t=totalNode/2;
-
-        while(t--){
-            head=head->next;
-        }
+    
+        
+    
  
-    }
+    
     return head;}
 };
