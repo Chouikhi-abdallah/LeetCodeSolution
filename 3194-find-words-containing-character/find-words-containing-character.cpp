@@ -9,7 +9,7 @@ public:
                     ress.insert(i);
             }
         }
-        for(auto i:ress)
+        for(auto &i:ress)
             res.push_back(i);
             return res;
     }
