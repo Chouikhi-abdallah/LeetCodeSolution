@@ -3,7 +3,7 @@ public:
     int maxDepth(string s) {
             stack<char> track;
     int maxDepth=0;
-    for (char i : s) {
+    for (char &i : s) {
         if(i=='(')
             track.push(i);
         if(i==')'){
