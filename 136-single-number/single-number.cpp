@@ -1,17 +1,10 @@
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
-        map<int,int>mp;
-        int uniqueElement;
-        for(auto i:nums)
-            mp[i]++;
-        for(auto i:mp){
-            if(i.second==1){
-                uniqueElement=i.first;
-                break;}
-        }
-        return uniqueElement;
-
-        
+     int res=nums[0];
+     for(int i=1;i<nums.size();i++){
+        res^=nums[i];
+     }
+     return res;
     }
 };
