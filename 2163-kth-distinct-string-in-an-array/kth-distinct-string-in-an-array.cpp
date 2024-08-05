@@ -8,13 +8,13 @@ public:
         vector<pair<string, int>> v;
         int index=1;
         for (auto i : arr) {
-            for (auto j : mp) {
-                if (i == j.first && j.second == 1) {
-                    v.push_back(make_pair(j.first, index));
+            
+                if (mp[i]==1) {
+                    v.push_back(make_pair(i, index));
                     index++;
                 }
             }
-        }
+        
 
         for (auto i : v) {
             if (i.second == k)
