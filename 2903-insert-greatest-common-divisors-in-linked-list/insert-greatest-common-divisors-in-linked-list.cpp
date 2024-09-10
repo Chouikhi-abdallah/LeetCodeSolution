@@ -10,40 +10,33 @@
  */
 class Solution {
 public:
-    int gcd(int a, int b) 
-{ 
-    int result = min(a, b); 
-    while (result > 0) { 
-        if (a % result == 0 && b % result == 0) { 
-            break; 
-        } 
-        result--; 
-    } 
-  
-    return result; 
-} 
+    int gcd(int a, int b) {
+        int result = min(a, b);
+        while (result > 0) {
+            if (a % result == 0 && b % result == 0) {
+                break;
+            }
+            result--;
+        }
+
+        return result;
+    }
     ListNode* insertGreatestCommonDivisors(ListNode* head) {
-        if(head->next==nullptr)
+        if (head->next == nullptr)
             return head;
-        else{    
+        else {
 
-        ListNode *left=head;
-        ListNode *right=head->next; 
-        while(right){
-            ListNode* newNode = new ListNode(gcd(left->val,right->val));
-            left->next=newNode;
-            newNode->next=right;
-            left=right;
-            right=right->next;
+            ListNode* left = head;
+            ListNode* right = head->next;
+            while (right) {
+                ListNode* newNode = new ListNode(gcd(left->val, right->val));
+                left->next = newNode;
+                newNode->next = right;
+                left = right;
+                right = right->next;
+            }
+
+            return head;
         }
-
-        return head;
-        
-        
-        
-        
-        }
-
-        
     }
 };
