@@ -19,7 +19,9 @@ class Solution(object):
             else:    
                 res = 0
                 while left < right:
-                    res += skill[left] * skill[right]
+                    if(skill[left]+skill[right]!=target):
+                        return -1
+                    res+=skill[left]*skill[right]    
                     left += 1
                     right -= 1
         return res
