@@ -4,8 +4,8 @@ class Solution(object):
         :type skill: List[int]
         :rtype: int
         """
-        if skill==[1,1,1,2,3,3,3,7,7,8,8,8,9,9]:
-            return -1
+        """if skill==[1,1,1,2,3,3,3,7,7,8,8,8,9,9]:
+            return -1"""
 
         if sum(skill) % (len(skill) // 2) != 0:
             return -1
