@@ -1,6 +1,4 @@
-package main
 
-import "strings"
 
 func numOfStrings(patterns []string, word string) int {
     occ := 0
